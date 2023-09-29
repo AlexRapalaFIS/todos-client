@@ -1,3 +1,18 @@
+type User = {
+  id: number;
+  username: string;
+};
+
+type UserLogin = {
+  username: string;
+  password: string;
+};
+
+type UserWithToken = {
+  user: User;
+  token: string;
+};
+
 type Todo = {
   id: number;
   name: string;
@@ -11,4 +26,4 @@ type NewTodo = {
   status: "PENDING" | "COMPLETED" | "CANCELED";
 };
 
-export { Todo, NewTodo };
+export { Todo, NewTodo, User, UserLogin, UserWithToken };
